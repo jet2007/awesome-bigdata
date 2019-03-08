@@ -49,17 +49,19 @@ Your contributions are always welcome!
 
 ## Frameworks
 
+* [Bistro](https://github.com/asavinov/bistro) - general-purpose data processing engine for both batch and stream analytics. It is based on a novel data model, which represents data via *functions* and processes data via *column operations* as opposed to having only set operations in conventional approaches like MapReduce or SQL.
 * [IBM Streams](https://www.ibm.com/analytics/us/en/technology/stream-computing/) - platform for distributed processing and real-time analytics.  Integrates with many of the popular technologies in the Big Data ecosystem (Kafka, HDFS, Spark, etc.)
 * [Apache Hadoop](http://hadoop.apache.org/) - framework for distributed processing. Integrates MapReduce (parallel processing), YARN (job scheduling) and HDFS (distributed file system).
 * [Tigon](https://github.com/caskdata/tigon) - High Throughput Real-time Stream Processing Framework.
 * [Pachyderm](http://pachyderm.io/) - Pachyderm is a data storage platform built on Docker and Kubernetes to provide reproducible data processing and analysis.
+* [Polyaxon](https://github.com/polyaxon/polyaxon) - A platform for reproducible and scalable machine learning and deep learning.
 
 ## Distributed Programming
 
 * [AddThis Hydra](https://github.com/addthis/hydra) - distributed data processing and storage system originally developed at AddThis.
 * [AMPLab SIMR](http://databricks.github.io/simr/) - run Spark on Hadoop MapReduce v1.
 * [Apache APEX](https://apex.apache.org/) - a unified, enterprise platform for big data stream and batch processing.
-* [Apache Beam](http://incubator.apache.org/projects/beam.html) - an unified model and set of language-specific SDKs for defining and executing data processing workflows.
+* [Apache Beam](https://beam.apache.org/) - an unified model and set of language-specific SDKs for defining and executing data processing workflows.
 * [Apache Crunch](http://crunch.apache.org/) - a simple Java API for tasks like joining and data aggregation that are tedious to implement on plain MapReduce.
 * [Apache DataFu](http://incubator.apache.org/projects/datafu.html) - collection of user-defined functions for Hadoop and Pig developed by LinkedIn.
 * [Apache Flink](http://flink.apache.org/) - high-performance runtime, and automatic program optimization.
@@ -76,6 +78,7 @@ Your contributions are always welcome!
 * [Apache Samza](http://samza.apache.org/) - stream processing framework, based on Kafka and YARN.
 * [Apache Tez](http://tez.apache.org/) - application framework for executing a complex DAG (directed acyclic graph) of tasks, built on YARN.
 * [Apache Twill](https://incubator.apache.org/projects/twill.html) - abstraction over YARN that reduces the complexity of developing distributed applications.
+* [Baidu Bigflow](http://bigflow.cloud/en/index.html) - an interface that allows for writing distributed computing programs providing lots of simple, flexible, powerful APIs to easily handle data of any scale.
 * [Cascalog](http://cascalog.org/) - data processing and querying library.
 * [Cheetah](http://vldbarc.org/pvldb/vldb2010/pvldb_vol3/I08.pdf) - High Performance, Custom Data Warehouse on Top of MapReduce.
 * [Concurrent Cascading](http://www.cascading.org/) - framework for data management/analytics on Hadoop.
@@ -131,6 +134,10 @@ Your contributions are always welcome!
 * [Tahoe-LAFS](https://www.tahoe-lafs.org/trac/tahoe-lafs) - decentralized cloud storage system.
 * [Baidu File System](https://github.com/baidu/bfs) - distributed filesystem.
 
+## Distributed Index
+
+* [Pilosa](https://github.com/pilosa/pilosa) Open source distributed bitmap index that dramatically accelerates queries across multiple, massive data sets. 
+
 ## Document Data Model
 
 * [Actian Versant](https://www.actian.com/data-management/ingres-sql-rdbms/) - commercial object-oriented database management systems .
@@ -183,6 +190,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [EventStore](https://geteventstore.com/) - distributed time series database.
 * [GridDB](https://github.com/griddb/griddb_nosql) - suitable for sensor data stored in a timeseries.
 * [HyperDex](https://github.com/rescrv/HyperDex) - a scalable, next generation key-value and document store with a wide array of features, including consistency, fault tolerance and high performance.
+* [Ignite](https://ignite.apache.org/index.html) - is an in-memory key-value data store providing full SQL-compliant data access that can optionally be backed by disk storage.
 * [LinkedIn Krati](https://github.com/linkedin-sna/sna-page/tree/master/krati) - is a simple persistent data store with very low latency and high throughput.
 * [Linkedin Voldemort](http://www.project-voldemort.com/voldemort/) - distributed key/value storage system.
 * [Oracle NoSQL Database](http://www.oracle.com/technetwork/database/database-technologies/nosqldb/overview/index.html) - distributed key-value database by Oracle Corporation.
@@ -213,8 +221,12 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Gremlin](https://github.com/tinkerpop/gremlin) - graph traversal Language.
 * [Infovore](https://github.com/paulhoule/infovore) - RDF-centric Map/Reduce framework.
 * [Intel GraphBuilder](https://01.org/graphbuilder/) - tools to construct large-scale graphs on top of Hadoop.
+* [JanusGraph](http://janusgraph.org) - open-source, distributed graph database
+  with multiple options for storage backends (Bigtable, HBase, Cassandra, etc.)
+  and indexing backends (Elasticsearch, Solr, Lucene).
 * [MapGraph](https://www.blazegraph.com/mapgraph-technology/) - Massively Parallel Graph processing on GPUs.
-* [Neo4j](https://neo4j.com/) - graph database writting entirely in Java.
+* [Microsoft Graph Engine](https://github.com/Microsoft/GraphEngine) - a distributed in-memory data processing engine, underpinned by a strongly-typed in-memory key-value store and a general distributed computation engine.
+* [Neo4j](https://neo4j.com/) - graph database written entirely in Java.
 * [OrientDB](http://orientdb.com/) - document and graph database.
 * [Phoebus](https://github.com/xslogic/phoebus) - framework for large scale graph processing.
 * [Titan](http://thinkaurelius.github.io/titan/) - distributed graph database, built over Cassandra.
@@ -236,13 +248,15 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Pivotal Greenplum](https://pivotal.io/pivotal-greenplum) - purpose-built, dedicated analytic data warehouse that offers a columnar engine as well as a traditional row-based one.
 * [Vertica](https://www.vertica.com/) - is designed to manage large, fast-growing volumes of data and provide very fast query performance when used for data warehouses.
 * [SQream DB](http://sqream.com/) - A GPU powered big data database, designed for analytics and data warehousing, with ANSI-92 compliant SQL, suitable for data sets from 10TB to 1PB.
-* [Google BigQuery](https://cloud.google.com/bigquery/what-is-bigquery) Google's cloud offering backed by their pioneering work on Dremel.
-* [Amazon Redshift](https://aws.amazon.com/redshift/) Amazon's cloud offering, also based on a columnar datastore backend.
-* [IndexR](https://github.com/shunfei/indexr) an open-source columnar storage format for fast & realtime analytic with big data.
+* [Google BigQuery](https://cloud.google.com/bigquery/what-is-bigquery) - Google's cloud offering backed by their pioneering work on Dremel.
+* [Amazon Redshift](https://aws.amazon.com/redshift/) - Amazon's cloud offering, also based on a columnar datastore backend.
+* [IndexR](https://github.com/shunfei/indexr) - an open-source columnar storage format for fast & realtime analytic with big data.
+* [LocustDB](https://github.com/cswinter/LocustDB) - an experimental analytics database aiming to set a new standard for query performance on commodity hardware. 
 
 ## NewSQL Databases
 
 * [Actian Ingres](http://www.actian.com/products/operational-databases/) - commercially supported, open-source SQL relational database management system.
+* [ActorDB](https://github.com/biokoda/actordb) - a distributed SQL database with the scalability of a KV store, while keeping the query capabilities of a relational database.
 * [Amazon RedShift](http://aws.amazon.com/redshift/) - data warehouse service, based on PostgreSQL.
 * [BayesDB](http://probcomp.csail.mit.edu/bayesdb/index.html) - statistic oriented SQL database.
 * [Bedrock](http://bedrockdb.com/) - a simple, modular, networked and distributed transaction layer built atop SQLite.
@@ -257,6 +271,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Haeinsa](https://github.com/VCNC/haeinsa) - linearly scalable multi-row, multi-table transaction library for HBase based on Percolator.
 * [HandlerSocket](https://www.percona.com/doc/percona-server/5.5/performance/handlersocket.html) - NoSQL plugin for MySQL/MariaDB.
 * [InfiniSQL](http://www.infinisql.org/) - infinity scalable RDBMS.
+* [Map-D](https://www.mapd.com/) - GPU in-memory database, big data analysis and visualization platform.
 * [MemSQL](http://www.memsql.com/) - in memory SQL database witho optimized columnar storage on flash.
 * [NuoDB](http://www.nuodb.com/) - SQL/ACID compliant distributed database.
 * [Oracle TimesTen in-Memory Database](http://www.oracle.com/technetwork/database/database-technologies/timesten/overview/index.html) - in-memory, relational database management system with persistence and recoverability.
@@ -265,9 +280,8 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [SenseiDB](http://senseidb.github.io/sensei/) - distributed, realtime, semi-structured database.
 * [Sky](http://skydb.io/) - database used for flexible, high performance analysis of behavioral data.
 * [SymmetricDS](http://www.symmetricds.org/) - open source software for both file and database synchronization.
-* [Map-D](https://www.mapd.com/) - GPU in-memory database, big data analysis and visualization platform
 * [TiDB](https://github.com/pingcap/tidb) - TiDB is a distributed SQL database. Inspired by the design of Google F1.
-* [VoltDB](https://www.voltdb.com/) - claims to be fastest in-memory database
+* [VoltDB](https://www.voltdb.com/) - claims to be fastest in-memory database.
 
 ## Time-Series Databases
 
@@ -277,6 +291,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Heroic](https://spotify.github.io/heroic/#!/index) - is a scalable time series database based on Cassandra and Elasticsearch.
 * [InfluxDB](https://www.influxdata.com/) - distributed time series database.
 * [Kairosdb](https://github.com/kairosdb/kairosdb) - similar to OpenTSDB but allows for Cassandra.
+* [M3DB](http://m3db.github.io/m3/m3db/) - a distributed time series database that can be used for storing realtime metrics at long retention.
 * [Newts](https://opennms.github.io/newts/) - a time series database based on Apache Cassandra.
 * [OpenTSDB](http://opentsdb.net) - distributed time series database on top of HBase.
 * [Prometheus](https://prometheus.io/) - a time series database and service monitoring system.
@@ -290,6 +305,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Blueflood](https://github.com/rackerlabs/blueflood) A distributed system designed to ingest and process time series data
 * [Timely](https://github.com/NationalSecurityAgency/timely) Timely is a time series database application that provides secure access to time series data based on Accumulo and Grafana.
 * [SiriDB](https://github.com/transceptor-technology/siridb-server) Highly-scalable, robust and fast, open source time series database with cluster functionality.
+* [Thanos](https://github.com/improbable-eng/thanos) - Thanos is a set of components to create a highly available metric system with unlimited storage capacity using multiple (existing) Prometheus deployments.
 
 ## SQL-like processing
 
@@ -318,9 +334,11 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 ## Data Ingestion
 
 * [Amazon Kinesis](https://aws.amazon.com/kinesis/) - real-time processing of streaming data at massive scale.
+* [Amazon Web Services Glue](https://aws.amazon.com/glue/) -  serverless fully managed extract, transform, and load (ETL) service
 * [Apache Chukwa](http://chukwa.apache.org/) - data collection system.
 * [Apache Flume](http://flume.apache.org/) - service to manage large amount of log data.
 * [Apache Kafka](http://kafka.apache.org/) - distributed publish-subscribe messaging system.
+* [Apache NiFi](https://nifi.apache.org/) - Apache NiFi is an integrated data logistics platform for automating the movement of data between disparate systems.
 * [Apache Sqoop](http://sqoop.apache.org/) - tool to transfer data between Hadoop and a structured datastore.
 * [Cloudera Morphlines](https://github.com/cloudera/cdk/tree/master/cdk-morphlines) - framework that help ETL to Solr, HBase and HDFS.
 * [Embulk](http://www.embulk.org) - open-source bulk data loader that helps data transfer between various databases, storages, file formats, and cloud services.
@@ -353,6 +371,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Google Chubby](https://research.google.com/archive/chubby.html) - a lock service for loosely-coupled distributed systems.
 * [Hydrosphere Mist](https://github.com/Hydrospheredata/mist) - a service for exposing Apache Spark analytics jobs and machine learning models as realtime, batch or reactive web services.
 * [Linkedin Norbert](https://engineering.linkedin.com/data) - cluster manager.
+* [Mara](https://github.com/mara/data-integration) - A lightweight opinionated ETL framework, halfway between plain scripts and Apache Airflow
 * [OpenMPI](https://www.open-mpi.org/) - message passing framework.
 * [Serf](https://www.serf.io/) - decentralized solution for service discovery and orchestration.
 * [Spotify Luigi](https://github.com/spotify/luigi) - a Python package for building complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization, handling failures, command line integration, and much more.
@@ -389,6 +408,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [GraphLab Create](https://dato.com/products/create/) - A machine learning platform in Python with a broad collection of ML toolkits, data engineering, and deployment tools.
 * [H2O](https://github.com/h2oai/h2o-3/) - statistical, machine learning and math runtime with Hadoop. R and Python.
 * [Keras](https://github.com/fchollet/keras) - An intuitive neural net API inspired by Torch that runs atop Theano and Tensorflow.
+* [Lambdo](https://github.com/asavinov/lambdo) is a workflow engine which significantly simplifies data processing and analysis by combining in one analysis pipeline (i) feature engineering and machine learning (ii) model training and prediction (iii) table population and column evaluation via user-defined (Python) functions.
 * [Mahout](http://mahout.apache.org/) - An Apache-backed machine learning library for Hadoop.
 * [MLbase](http://www.mlbase.org/) - distributed machine learning libraries for the BDAS stack.
 * [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet) - Fast multilayer perceptron neural network library for iOS and Mac OS X.
@@ -442,6 +462,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Google Borg](https://www.wired.com/2013/03/google-borg-twitter-mesos/all/) - job scheduling and monitoring system.
 * [Google Omega](https://www.youtube.com/watch?v=0ZFMlO98Jkc) - job scheduling and monitoring system.
 * [Hortonworks HOYA](https://hortonworks.com/blog/introducing-hoya-hbase-on-yarn/) - application that can deploy HBase cluster on YARN.
+* [Kubernetes](https://kubernetes.io/) - a system for automating deployment, scaling, and management of containerized applications.
 * [Marathon](https://github.com/mesosphere/marathon) - Mesos framework for long-running services.
 
 ## Applications
@@ -499,6 +520,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [LinkedIn Zoie](https://github.com/senseidb/zoie) - is a realtime search/indexing system written in Java.
 * [MG4J](http://mg4j.di.unimi.it/) - MG4J (Managing Gigabytes for Java) is a full-text search engine for large document collections written in Java. It is highly customisable, high-performance and provides state-of-the-art features and new research algorithms.
 * [Sphinx Search Server](http://sphinxsearch.com/) - fulltext search engine.
+* [Vespa](http://vespa.ai/) - is an engine for low-latency computation over large data sets. It stores and indexes your data such that queries, selection and processing over the data can be performed at serving time.
 
 ## MySQL forks and evolutions
 
@@ -549,8 +571,10 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Jaspersoft](https://www.jaspersoft.com/) - powerful business intelligence suite.
 * [Jedox Palo](https://www.jedox.com/en/) - customisable Business Intelligence platform.
 * [Jethrodata](https://jethro.io/) - Interactive Big Data Analytics.
+* [Metabase](https://github.com/metabase/metabase) - The simplest, fastest way to get business intelligence and analytics to everyone in your company.
 * [Microsoft](http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/default.aspx) - business intelligence software and platform.
 * [Microstrategy](https://www.microstrategy.com/) - software platforms for business intelligence, mobile intelligence, and network applications.
+* [Numeracy](https://numeracy.co/) - Fast, clean SQL client and business intelligence.
 * [Pentaho](http://www.pentaho.com/) - business intelligence platform.
 * [Qlik](http://www.qlik.com/us/) - business intelligence and analytics platform.
 * [Redash](https://redash.io/) - Open source business intelligence platform, supporting multiple data sources and planned queries.
@@ -559,7 +583,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [SparklineData SNAP](http://sparklinedata.com/) - modern B.I platform powered by Apache Spark.
 * [Tableau](https://www.tableau.com/) - business intelligence platform.
 * [Zoomdata](https://www.zoomdata.com/) - Big Data Analytics.
-* [Metabase](https://github.com/metabase/metabase) - The simplest, fastest way to get business intelligence and analytics to everyone in your company
+
 
 ## Data Visualization
 
@@ -584,6 +608,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Echarts](https://github.com/ecomfe/echarts) - Baidus enterprise charts.
 * [Envisionjs](https://github.com/HumbleSoftware/envisionjs) - dynamic HTML5 visualization.
 * [FnordMetric](https://metrictools.org/) - write SQL queries that return SVG charts rather than tables
+* [Frappe Charts](https://frappe.io/charts) - GitHub-inspired simple and modern SVG charts for the web with zero dependencies.
 * [Freeboard](https://github.com/Freeboard/freeboard) - pen source real-time dashboard builder for IOT and other web mashups.
 * [Gephi](https://github.com/gephi/gephi) - An award-winning open-source platform for visualizing and manipulating large graphs and network connections. It's like Photoshop, but for graphs. Available for Windows and Mac OS X.
 * [Google Charts](https://developers.google.com/chart/) - simple charting API.
@@ -605,7 +630,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [Shiny](http://shiny.rstudio.com/) - a web application framework for R.
 * [Sigma.js](https://github.com/jacomyal/sigma.js) - JavaScript library dedicated to graph drawing.
 * [Superset](https://github.com/apache/incubator-superset) - a data exploration platform designed to be visual, intuitive and interactive, making it easy to slice, dice and visualize data and perform analytics at the speed of thought.
-* [Vega](https://github.com/trifacta/vega) - a visualization grammar.
+* [Vega](https://github.com/vega/vega) - a visualization grammar.
 * [Zeppelin](https://github.com/ZEPL/zeppelin) - a notebook-style collaborative data analysis.
 * [Zing Charts](https://www.zingchart.com/) - JavaScript charting library for big data.
 
@@ -619,6 +644,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [ThingWorx](https://www.thingworx.com/) - Rapid development and connection of intelligent systems
 * [IFTTT](https://ifttt.com/) - If this then that
 * [Evrything](https://evrythng.com/)- Making products smart
+* [NetLytics](https://github.com/marty90/netlytics/) - Analytics platform to process network data on Spark.
 
 ## Interesting Readings
 
@@ -626,6 +652,7 @@ You can read more about this distinction on Prof. Daniel Abadi's blog: [Distingu
 * [NoSQL Comparison](https://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis) - Cassandra vs MongoDB vs CouchDB vs Redis vs Riak vs HBase vs Couchbase vs Neo4j vs Hypertable vs ElasticSearch vs Accumulo vs VoltDB vs Scalaris comparison.
 * [Monitoring Kafka performance](https://www.datadoghq.com/blog/monitoring-kafka-performance-metrics?ref=awesome) - Guide to monitoring Apache Kafka, including native methods for metrics collection.
 * [Monitoring Hadoop performance](https://www.datadoghq.com/blog/monitor-hadoop-metrics?ref=awesome) - Guide to monitoring Hadoop, with an overview of Hadoop architecture, and native methods for metrics collection.
+* [Monitoring Cassandra performance](https://www.datadoghq.com/blog/how-to-monitor-cassandra-performance-metrics/?ref=awesome) - Guide to monitoring Cassandra, including native methods for metrics collection.
 
 ## Interesting Papers
 
@@ -682,10 +709,12 @@ for Data Analytics at Twitter.
 
 ## Videos
 
+* [Spark in Motion](https://www.manning.com/livevideo/spark-in-motion) - Spark in Motion teaches you how to use Spark for batch and streaming data analytics.
+
 ## Books
 
 #### Streaming
-
+* [Data Science at Scale with Python and Dask](https://www.manning.com/books/data-science-at-scale-with-python-and-dask) - Data Science at Scale with Python and Dask teaches you how to build distributed data projects that can handle huge amounts of data.
 * [Streaming Data](https://www.manning.com/books/streaming-data) - Streaming Data introduces the concepts and requirements of streaming and real-time data systems.
 * [Storm Applied](https://www.manning.com/books/storm-applied) - Storm Applied is a practical guide to using Apache Storm for the real-world tasks associated with processing and analyzing real-time data streams.
 * [Fundamentals of Stream Processing: Application Design, Systems, and Analytics](http://www.cambridge.org/us/academic/subjects/engineering/communications-and-signal-processing/fundamentals-stream-processing-application-design-systems-and-analytics) - This comprehensive, hands-on guide combining the fundamental building blocks and emerging research in stream processing is ideal for application designers, system builders, analytic developers, as well as students and researchers in the field.
@@ -695,10 +724,14 @@ for Data Analytics at Twitter.
 * [Big Data](https://www.manning.com/books/big-data) - Big Data teaches you to build big data systems using an architecture that takes advantage of clustered hardware along with new tools designed specifically to capture and analyze web-scale data.
 * [Spark in Action](https://www.manning.com/books/spark-in-action) - Spark in Action teaches you the theory and skills you need to effectively handle batch and streaming data using Spark. Fully updated for Spark 2.0.
 * [Kafka in Action](https://www.manning.com/books/kafka-in-action) - Kafka in Action is a fast-paced introduction to every aspect of working with Kafka you need to really reap its benefits.
+* [Fusion in Action](https://www.manning.com/books/fusion-in-action) - Fusion in Action teaches you to build a full-featured data analytics pipeline, including document and data search and distributed data clustering.
 * [Reactive Data Handling](https://www.manning.com/books/reactive-data-handling) - Reactive Data Handling is a collection of five hand-picked chapters, selected by Manuel Bernhardt, that introduce you to building reactive applications capable of handling real-time processing with large data loads--free eBook! 
 
 #### Distributed systems
 * [Distributed Systems for fun and profit](http://book.mixu.net/distsys/) – Theory of distributed systems. Include parts about time and ordering, replication and impossibility results.
+
+#### Graph Based approach
+* [Graph-Powered Machine Learning](https://www.manning.com/books/graph-powered-machine-learning) - Alessandro Negro. Combine graph theory and models to improve machine learning projects
 
 ### Data Visualization
  * [The beauty of data visualization](https://www.youtube.com/watch?v=5Zg-C8AAIGg)
@@ -713,3 +746,7 @@ for Data Analytics at Twitter.
 - Another list? [list](https://github.com/jnv/lists).
 - WTF! [awesome-awesome-awesome](https://github.com/t3chnoboy/awesome-awesome-awesome).
 - Analytics [awesome-analytics](https://github.com/onurakpolat/awesome-analytics).
+- Public Datasets [awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets).
+- Graph Embedding [awesome-graph-embedding](https://github.com/benedekrozemberczki/awesome-graph-embedding).
+- Network Embedding [awesome-network-embedding](https://github.com/chihming/awesome-network-embedding).
+- Community Detection [awesome-community-detection](https://github.com/benedekrozemberczki/awesome-community-detection).
